@@ -47,10 +47,12 @@ def main():
     stamp = time.strftime("%Y-%m-%dT%H:%M:%S%z")
     key = os.environ.get("OPENROUTER_API_KEY", "").strip()
     if not key:
-        (DATA / "status.json").write_text(json.dumps(
-            {"checked_at": stamp, "skipped": "OPENROUTER_API_KEY not set",
-             "results": []}, indent=2))
-        print("skipped: no OPENROUTER_API_KEY")
+        # Never clobber an existing (real) status with a "skipped" stub.
+        if not (DATA / "status.json").exists():
+            (DATA / "status.json").write_text(json.dumps(
+                {"checked_at": stamp, "skipped": "OPENROUTER_API_KEY not set",
+                 "results": []}, indent=2))
+        print("skipped: no OPENROUTER_API_KEY (existing status kept)")
         return 0
 
     roster = json.loads((DATA / "free-models.json").read_text())
