@@ -20,6 +20,10 @@ repository treats the free tier as a moving target:
   models into agent products, starting with the Pi coding agent.
   → [`recipes/`](recipes/)
 
+**Live status page:** [maoxunxing.com/ai/free-llm-models](https://maoxunxing.com/ai/free-llm-models/)
+renders this repository's data as a web page - the roster, the health
+checks and a three-step quick start - refreshed hourly from `data/`.
+
 ## Current roster (refreshed 2026-10-23)
 
 | # | Model | Context | Reasoning |

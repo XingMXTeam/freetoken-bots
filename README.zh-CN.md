@@ -16,6 +16,10 @@
 - **集成配方**：把这些模型接进 agent 产品的现成配置，每份都真实
   跑通过才发布。→ [`recipes/`](recipes/)
 
+**在线状态页：** [maoxunxing.com/ai/free-llm-models](https://maoxunxing.com/ai/free-llm-models/)
+把本仓库的数据渲染成网页（名单、体检结果、三步上手），每小时从
+`data/` 刷新一次。
+
 ## 当前名单（2026-10-23 刷新）
 
 排名前五：`poolside/laguna-s-2.1:free`、`poolside/laguna-xs-2.1:free`、
