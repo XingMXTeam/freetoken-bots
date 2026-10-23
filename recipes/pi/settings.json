@@ -1,0 +1,24 @@
+{
+  "defaultProvider": "openrouter",
+  "defaultModel": "cohere/north-mini-code:free",
+  "defaultThinkingLevel": "medium",
+  "enabledModels": [
+    "openrouter/poolside/laguna-s-2.1:free",
+    "openrouter/poolside/laguna-xs-2.1:free",
+    "openrouter/cohere/north-mini-code:free",
+    "openrouter/thinkingmachines/inkling-small:free",
+    "openrouter/thinkingmachines/inkling:free",
+    "openrouter/nvidia/nemotron-3-ultra-550b-a55b:free",
+    "openrouter/nvidia/nemotron-3.5-lightning:free",
+    "openrouter/nvidia/nemotron-3.5-super-vl:free",
+    "openrouter/dots-studio/dots-3-note-preview:free",
+    "openrouter/google/gemma-4-26b-a4b-it:free",
+    "openrouter/google/gemma-4-31b-it:free",
+    "openrouter/nvidia/nemotron-3-super-120b-a12b:free",
+    "openrouter/recursive/flint-v1.0:free",
+    "openrouter/xingchen-agi/xing4.0-29b-a4b:free",
+    "openrouter/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "openrouter/liquid/lfm-2.5-2.6b:free",
+    "openrouter/openrouter/free"
+  ]
+}
