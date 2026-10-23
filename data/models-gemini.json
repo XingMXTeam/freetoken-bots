@@ -1,0 +1,17 @@
+{
+  "provider": "gemini",
+  "refreshed_at": "2026-10-23T13:58:30+0800",
+  "source": "seed",
+  "count": 3,
+  "models": [
+    {
+      "id": "gemini-2.5-flash"
+    },
+    {
+      "id": "gemini-2.5-flash-lite"
+    },
+    {
+      "id": "gemini-2.0-flash"
+    }
+  ]
+}

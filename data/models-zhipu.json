@@ -1,0 +1,14 @@
+{
+  "provider": "zhipu",
+  "refreshed_at": "2026-10-23T13:58:30+0800",
+  "source": "seed",
+  "count": 2,
+  "models": [
+    {
+      "id": "glm-4-flash"
+    },
+    {
+      "id": "glm-4.5-flash"
+    }
+  ]
+}

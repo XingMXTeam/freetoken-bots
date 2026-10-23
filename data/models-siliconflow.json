@@ -1,0 +1,17 @@
+{
+  "provider": "siliconflow",
+  "refreshed_at": "2026-10-23T13:58:30+0800",
+  "source": "seed",
+  "count": 3,
+  "models": [
+    {
+      "id": "Qwen/Qwen2.5-7B-Instruct"
+    },
+    {
+      "id": "THUDM/glm-4-9b-chat"
+    },
+    {
+      "id": "Qwen/Qwen3-8B"
+    }
+  ]
+}

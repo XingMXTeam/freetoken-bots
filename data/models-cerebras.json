@@ -1,0 +1,14 @@
+{
+  "provider": "cerebras",
+  "refreshed_at": "2026-10-23T13:58:30+0800",
+  "source": "seed",
+  "count": 2,
+  "models": [
+    {
+      "id": "llama-3.3-70b"
+    },
+    {
+      "id": "gpt-oss-120b"
+    }
+  ]
+}

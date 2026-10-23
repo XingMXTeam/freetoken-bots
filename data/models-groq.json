@@ -1,0 +1,23 @@
+{
+  "provider": "groq",
+  "refreshed_at": "2026-10-23T13:58:30+0800",
+  "source": "seed",
+  "count": 5,
+  "models": [
+    {
+      "id": "llama-3.3-70b-versatile"
+    },
+    {
+      "id": "llama-3.1-8b-instant"
+    },
+    {
+      "id": "openai/gpt-oss-120b"
+    },
+    {
+      "id": "openai/gpt-oss-20b"
+    },
+    {
+      "id": "qwen/qwen3-32b"
+    }
+  ]
+}

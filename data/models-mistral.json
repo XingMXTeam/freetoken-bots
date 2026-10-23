@@ -1,0 +1,14 @@
+{
+  "provider": "mistral",
+  "refreshed_at": "2026-10-23T13:58:30+0800",
+  "source": "seed",
+  "count": 2,
+  "models": [
+    {
+      "id": "codestral-latest"
+    },
+    {
+      "id": "mistral-small-latest"
+    }
+  ]
+}

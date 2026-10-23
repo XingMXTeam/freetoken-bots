@@ -82,13 +82,40 @@ Never hard-code a single free model into an agent and walk away.
 - Budget your probes: health checks spend the same daily allowance
   your agents use (this repo probes ~6 tiny requests per day).
 
+## All providers
+
+OpenRouter is the deep integration (live roster + probes). The other
+free sources are registered in `scripts/providers.py` with per-provider
+rosters in `data/models-<provider>.json` and an index in
+`data/providers.json`. A roster marked **seed** is a curated starting
+list for a provider whose catalog needs a key to read; add the key as
+a repository secret and the daily job upgrades it to a live API roster
+and starts probing. Full limit details live in `data/providers.json`.
+
+| Provider | Kind | Free allowance (short) | Roster |
+|----------|------|------------------------|--------|
+| OpenRouter | free tier | 50 free-model req/day | **live** + probes |
+| Google Gemini (AI Studio) | free tier | Flash up to ~1,500 req/day (community-measured) | seed → live with `GEMINI_API_KEY` |
+| Groq | free tier | ~1,000 req/day, ~200K tokens/day cap | seed → live with `GROQ_API_KEY` |
+| NVIDIA NIM | free tier | ~40 RPM, up to 10K req/day (community) | seed → live with `NVIDIA_API_KEY` |
+| Cloudflare Workers AI | free tier | 10,000 Neurons/day (~4M input tokens) | seed → live with `CLOUDFLARE_API_TOKEN` |
+| Zhipu GLM Flash | free tier | Flash endpoints free, ~1 concurrent | seed → live with `ZHIPU_API_KEY` |
+| ModelScope | free tier | ~2,000 calls/day (community) | seed → live with `MODELSCOPE_API_KEY` |
+| SiliconFlow | free tier | subset of models free | seed → live with `SILICONFLOW_API_KEY` |
+| Mistral | trial credit | ~$10/month credit, not a free tier | seed → live with `MISTRAL_API_KEY` |
+| Cerebras | trial credit | $5 credit, 30 days, card required | seed → live with `CEREBRAS_API_KEY` |
+| Ollama (local) | local | unlimited (your hardware) | seed → live with `OLLAMA_HOST` |
+| OpenCode Zen | app-locked | DeepSeek free inside the app only | documented; not API-probeable |
+
 ## Roadmap
 
 - [x] OpenRouter roster + health checks (daily, via GitHub Actions)
 - [x] Pi agent recipe
-- [ ] More providers: Gemini free tier, Groq, NVIDIA NIM, Cloudflare
-      Workers AI, and free domestic endpoints (Zhipu GLM Flash,
-      ModelScope, SiliconFlow)
+- [x] Provider registry: Gemini, Groq, NVIDIA NIM, Cloudflare Workers
+      AI, Zhipu GLM Flash, ModelScope, SiliconFlow, Mistral, Cerebras,
+      Ollama, OpenCode Zen (seed rosters; live once keys are added)
+- [ ] Live probes for the providers above (needs the maintainer's keys
+      as repository secrets)
 - [ ] More recipes: Claude Code, Cursor, OpenCode
 
 ## Credits & disclaimer

@@ -1,0 +1,17 @@
+{
+  "provider": "ollama",
+  "refreshed_at": "2026-10-23T13:58:30+0800",
+  "source": "seed",
+  "count": 3,
+  "models": [
+    {
+      "id": "qwen3:8b"
+    },
+    {
+      "id": "qwen2.5-coder:7b"
+    },
+    {
+      "id": "llama3.2:3b"
+    }
+  ]
+}

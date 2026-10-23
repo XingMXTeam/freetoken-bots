@@ -1,0 +1,17 @@
+{
+  "provider": "nvidia",
+  "refreshed_at": "2026-10-23T13:58:30+0800",
+  "source": "seed",
+  "count": 3,
+  "models": [
+    {
+      "id": "meta/llama-3.3-70b-instruct"
+    },
+    {
+      "id": "openai/gpt-oss-120b"
+    },
+    {
+      "id": "nvidia/nemotron-3-nano-30b-a3b"
+    }
+  ]
+}

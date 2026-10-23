@@ -56,12 +56,38 @@ agent 是用不了几天的。
 - 体检要省着用：每次探测都消耗你自己 agent 的同一份每日额度
   （本仓库每天约 6 次极小调用）。
 
+## 全部平台
+
+深度接入的是 OpenRouter（实时名单 + 体检）。其他免费来源已全部
+登记进 `scripts/providers.py`，各家名单在
+`data/models-<平台>.json`，总索引在 `data/providers.json`。
+标为**种子**的名单是策展起始清单（这些平台的目录要 key 才能读）：
+把对应 key 加为仓库 Secret 后，每日任务会自动升级为 API 实时
+名单并开始探活。额度细节见 `data/providers.json`。
+
+| 平台 | 类型 | 免费额度（简） | 名单状态 |
+|------|------|----------------|----------|
+| OpenRouter | 免费层 | 免费模型 50 次/天 | **实时** + 体检 |
+| Google Gemini（AI Studio） | 免费层 | Flash 最高约 1500 次/天（社区实测） | 种子 → 加 `GEMINI_API_KEY` 转实时 |
+| Groq | 免费层 | 约 1000 次/天，另有约 20 万 token/天总帽 | 种子 → 加 key 转实时 |
+| NVIDIA NIM | 免费层 | 约 40 RPM、单模型最高 1 万次/天（社区） | 种子 → 加 key 转实时 |
+| Cloudflare Workers AI | 免费层 | 每天 1 万 Neurons（约 400 万输入 token） | 种子 → 加 token 转实时 |
+| 智谱 GLM Flash | 免费层 | Flash 端点免费，约 1 并发 | 种子 → 加 key 转实时 |
+| 魔搭 ModelScope | 免费层 | 约 2000 次/天（社区） | 种子 → 加 key 转实时 |
+| 硅基流动 | 免费层 | 部分模型免费 | 种子 → 加 key 转实时 |
+| Mistral | 试用额度 | 每月约 $10 额度，非免费层 | 种子 → 加 key 转实时 |
+| Cerebras | 试用额度 | $5、30 天、要绑卡 | 种子 → 加 key 转实时 |
+| Ollama（本地） | 本地 | 无限（看自己硬件） | 种子 → 设 `OLLAMA_HOST` 读本机实装 |
+| OpenCode Zen | 锁应用内 | DeepSeek 免费版仅应用内可用 | 仅登记说明，API 无法探活 |
+
 ## 路线图
 
 - [x] OpenRouter 名单 + 体检（GitHub Actions 每日自动）
 - [x] Pi agent 配方
-- [ ] 更多来源：Gemini 免费层、Groq、NVIDIA NIM、Cloudflare
-      Workers AI，以及国内免费端点（智谱 GLM Flash、魔搭、硅基流动）
+- [x] 平台注册表：Gemini、Groq、NVIDIA NIM、Cloudflare Workers
+      AI、智谱、魔搭、硅基流动、Mistral、Cerebras、Ollama、
+      OpenCode Zen（种子名单，加 key 后转实时）
+- [ ] 上述平台的实时体检（需维护者把各家 key 加为仓库 Secret）
 - [ ] 更多配方：Claude Code、Cursor、OpenCode
 
 ## 出处与声明

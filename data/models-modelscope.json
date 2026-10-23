@@ -1,0 +1,17 @@
+{
+  "provider": "modelscope",
+  "refreshed_at": "2026-10-23T13:58:30+0800",
+  "source": "seed",
+  "count": 3,
+  "models": [
+    {
+      "id": "Qwen/Qwen3-235B-A22B"
+    },
+    {
+      "id": "Qwen/Qwen3-32B"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V3.2"
+    }
+  ]
+}

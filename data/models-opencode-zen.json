@@ -1,0 +1,11 @@
+{
+  "provider": "opencode-zen",
+  "refreshed_at": "2026-10-23T13:58:30+0800",
+  "source": "seed",
+  "count": 1,
+  "models": [
+    {
+      "id": "deepseek-v4.1-flash-free"
+    }
+  ]
+}
