@@ -14,6 +14,8 @@ permissions:
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    env:
+      OR_KEY_PRESENT: ${{ secrets.OPENROUTER_API_KEY != '' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -22,7 +24,7 @@ jobs:
       - name: Refresh roster
         run: python3 scripts/refresh.py
       - name: Health check (budgeted probes)
-        if: ${{ secrets.OPENROUTER_API_KEY != '' }}
+        if: ${{ env.OR_KEY_PRESENT == 'true' }}
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           PROBE_COUNT: "5"
