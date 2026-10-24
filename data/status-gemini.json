@@ -1,6 +1,6 @@
 {
   "provider": "gemini",
-  "checked_at": "2026-10-24T05:56:46+0000",
+  "checked_at": "2026-10-24T06:04:32+0000",
   "method": "one tiny chat request per model, top 2 of roster",
   "results": [
     {
