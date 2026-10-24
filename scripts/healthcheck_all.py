@@ -47,11 +47,14 @@ def probe(p, model, key):
             {"contents": [{"parts": [{"text": "Reply with exactly: OK"}]}],
              "generationConfig": {"maxOutputTokens": 16}}, {})
     if style == "cloudflare":
+        # OpenAI-compatible endpoint (docs: needs only Workers AI Read).
+        # The older /ai/run/{model} path 404'd with the same token, so the
+        # probe uses the canonical chat-completions route instead.
         acct = os.environ[p["key_env_extra"]]
         return call(
-            f"https://api.cloudflare.com/client/v4/accounts/{acct}/ai/run/{model}",
-            {"messages": [{"role": "user", "content": "Reply with exactly: OK"}],
-             "max_tokens": 16},
+            f"https://api.cloudflare.com/client/v4/accounts/{acct}/ai/v1/chat/completions",
+            {"model": model, "max_tokens": 16,
+             "messages": [{"role": "user", "content": "Reply with exactly: OK"}]},
             {"Authorization": f"Bearer {key}"})
     return None
 
