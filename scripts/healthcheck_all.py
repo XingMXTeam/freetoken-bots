@@ -28,6 +28,11 @@ def call(url, body, headers):
             json.load(r)
         return "ok", round(time.time() - t, 1)
     except urllib.error.HTTPError as e:
+        try:
+            detail = e.read()[:300].decode(errors="replace")
+        except Exception:
+            detail = ""
+        print(f"  probe error HTTP {e.code}: {detail}")
         return {429: "rate-limited", 404: "no-endpoint"}.get(e.code, f"http-{e.code}"), round(time.time() - t, 1)
     except Exception as e:
         return f"error: {str(e)[:80]}", round(time.time() - t, 1)

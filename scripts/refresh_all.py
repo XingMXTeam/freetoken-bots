@@ -79,6 +79,15 @@ def main():
         if can_api:
             try:
                 models, source = fetch_api_roster(p), "api"
+            except urllib.error.HTTPError as e:
+                # Log the provider's error code/message (never a token)
+                # so a 404 vs 403 can be told apart in CI logs.
+                try:
+                    detail = e.read()[:300].decode(errors="replace")
+                except Exception:
+                    detail = ""
+                print(f"{p['id']}: live fetch failed (HTTP {e.code}); "
+                      f"body={detail}; falling back to seed")
             except Exception as e:
                 print(f"{p['id']}: live fetch failed ({e}); falling back to seed")
         if models is None and p.get("seed_models"):
