@@ -76,7 +76,14 @@ def main():
         roster_file = DATA / f"models-{p['id']}.json"
         if not roster_file.exists():
             continue
-        models = [m["id"] for m in json.loads(roster_file.read_text())["models"][:PER]]
+        all_models = [m["id"] for m in json.loads(roster_file.read_text())["models"]]
+        if p["id"] == "cloudflare":
+            # The catalog mixes chat, embedding, image and audio models;
+            # only chat-capable ones answer a chat probe.
+            chat = [m for m in all_models if "instruct" in m or "gpt-oss" in m]
+            models = (chat or all_models)[:PER]
+        else:
+            models = all_models[:PER]
         results = []
         for m in models:
             got = probe(p, m, key)
