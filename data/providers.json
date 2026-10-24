@@ -1,5 +1,5 @@
 {
-  "refreshed_at": "2026-10-24T04:54:23+0000",
+  "refreshed_at": "2026-10-24T05:56:46+0000",
   "providers": [
     {
       "id": "openrouter",
@@ -21,7 +21,7 @@
       "roster_source": "seed",
       "model_count": 3,
       "key_env": "GEMINI_API_KEY",
-      "key_configured": false,
+      "key_configured": true,
       "note": null
     },
     {
@@ -57,7 +57,7 @@
       "roster_source": "seed",
       "model_count": 4,
       "key_env": "CLOUDFLARE_API_TOKEN",
-      "key_configured": false,
+      "key_configured": true,
       "note": null
     },
     {
