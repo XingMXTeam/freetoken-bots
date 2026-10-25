@@ -101,18 +101,33 @@ def main():
 
             chat = [m for m in all_models if pat.match(m)]
             chat.sort(key=keyf, reverse=True)
-            models = (chat or all_models)[:PER]
+            # Free-tier Gemini can leave a model unresponsive for minutes
+            # (gemini-3.7-flash timed out at both 60s and 120s while
+            # 3.8-flash answered). Keep the full candidate list: probing
+            # below walks it until PER models answer, max 4 probed, and
+            # records every attempt - a timeout stays visible, it is
+            # not silently skipped.
+            models = chat or all_models[:PER]
         else:
             models = all_models[:PER]
         results = []
+        ok_count = 0
         for m in models:
+            if p["id"] == "gemini" and (ok_count >= PER or len(results) >= 4):
+                break
             got = probe(p, m, key)
             if got:
                 results.append({"model": m, "status": got[0], "secs": got[1]})
                 print(p["id"], m, "->", got[0])
+                if got[0] == "ok":
+                    ok_count += 1
+        method = (f"one tiny chat request per model, top {PER} of roster"
+                  if p["id"] != "gemini" else
+                  f"newest mainstream models first, until {PER} answer "
+                  "(max 4 probed, all attempts recorded)")
         (DATA / f"status-{p['id']}.json").write_text(json.dumps(
             {"provider": p["id"], "checked_at": stamp,
-             "method": f"one tiny chat request per model, top {PER} of roster",
+             "method": method,
              "results": results}, indent=2, ensure_ascii=False))
 
 
