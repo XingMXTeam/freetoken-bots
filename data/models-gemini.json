@@ -1,17 +1,146 @@
 {
   "provider": "gemini",
-  "refreshed_at": "2026-10-24T06:24:51+0000",
-  "source": "seed",
-  "count": 3,
+  "refreshed_at": "2026-10-25T04:47:51+0000",
+  "source": "api",
+  "count": 46,
   "models": [
     {
       "id": "gemini-2.5-flash"
     },
     {
+      "id": "gemini-2.5-pro"
+    },
+    {
+      "id": "gemini-2.5-flash-preview-tts"
+    },
+    {
+      "id": "gemini-2.5-pro-preview-tts"
+    },
+    {
+      "id": "gemma-4-26b-a4b-it"
+    },
+    {
+      "id": "gemma-4-31b-it"
+    },
+    {
+      "id": "gemini-flash-latest"
+    },
+    {
+      "id": "gemini-flash-lite-latest"
+    },
+    {
+      "id": "gemini-pro-latest"
+    },
+    {
       "id": "gemini-2.5-flash-lite"
     },
     {
-      "id": "gemini-2.0-flash"
+      "id": "gemini-2.5-flash-image"
+    },
+    {
+      "id": "gemini-3-flash-preview"
+    },
+    {
+      "id": "gemini-3.1-pro-preview"
+    },
+    {
+      "id": "gemini-3.1-pro-preview-customtools"
+    },
+    {
+      "id": "gemini-3.1-flash-lite-preview"
+    },
+    {
+      "id": "gemini-3.1-flash-lite"
+    },
+    {
+      "id": "gemini-3-pro-image-preview"
+    },
+    {
+      "id": "gemini-3-pro-image"
+    },
+    {
+      "id": "nano-banana-pro-preview"
+    },
+    {
+      "id": "gemini-3.1-flash-image-preview"
+    },
+    {
+      "id": "gemini-3.1-flash-image"
+    },
+    {
+      "id": "gemini-3.1-flash-lite-image"
+    },
+    {
+      "id": "gemini-nano-banana-2.1"
+    },
+    {
+      "id": "gemini-3.5-flash"
+    },
+    {
+      "id": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "gemini-omni-flash-preview"
+    },
+    {
+      "id": "gemini-omni-1.1-flash"
+    },
+    {
+      "id": "gemini-3.5-transcribe"
+    },
+    {
+      "id": "gemini-3.6-flash"
+    },
+    {
+      "id": "gemini-3.7-flash"
+    },
+    {
+      "id": "gemini-3.8-flash"
+    },
+    {
+      "id": "gemini-4-argon"
+    },
+    {
+      "id": "lyria-3-clip-preview"
+    },
+    {
+      "id": "lyria-3-pro-preview"
+    },
+    {
+      "id": "lyria-3.5"
+    },
+    {
+      "id": "gemini-3.1-flash-tts-preview"
+    },
+    {
+      "id": "gemini-3.8-flash-tts"
+    },
+    {
+      "id": "gemini-3.8-flash-lite-tts"
+    },
+    {
+      "id": "gemini-robotics-er-2-preview"
+    },
+    {
+      "id": "gemini-2.5-computer-use-preview-10-2025"
+    },
+    {
+      "id": "antigravity-preview-05-2026"
+    },
+    {
+      "id": "antigravity-preview-09-2026"
+    },
+    {
+      "id": "antigravity-preview-latest"
+    },
+    {
+      "id": "deep-research-max-preview-04-2026"
+    },
+    {
+      "id": "deep-research-preview-04-2026"
+    },
+    {
+      "id": "deep-research-pro-preview-12-2025"
     }
   ]
 }

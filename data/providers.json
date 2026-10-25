@@ -1,5 +1,5 @@
 {
-  "refreshed_at": "2026-10-24T06:24:51+0000",
+  "refreshed_at": "2026-10-25T04:47:51+0000",
   "providers": [
     {
       "id": "openrouter",
@@ -18,8 +18,8 @@
       "kind": "free-tier",
       "limits": "Free tier, no card required. Community-measured: Flash models roughly 10 RPM and up to ~1,500 requests/day depending on model. Free-tier prompts may be used by Google to improve products; a project with billing enabled loses the free tier.",
       "signup": "https://aistudio.google.com/apikey",
-      "roster_source": "seed",
-      "model_count": 3,
+      "roster_source": "api",
+      "model_count": 46,
       "key_env": "GEMINI_API_KEY",
       "key_configured": true,
       "note": null

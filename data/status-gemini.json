@@ -1,17 +1,17 @@
 {
   "provider": "gemini",
-  "checked_at": "2026-10-24T06:24:51+0000",
+  "checked_at": "2026-10-25T04:47:52+0000",
   "method": "one tiny chat request per model, top 2 of roster",
   "results": [
     {
-      "model": "gemini-2.5-flash",
-      "status": "http-400",
+      "model": "gemini-4-argon",
+      "status": "http-403",
       "secs": 0.1
     },
     {
-      "model": "gemini-2.5-flash-lite",
-      "status": "http-400",
-      "secs": 0.1
+      "model": "gemini-3.8-flash",
+      "status": "ok",
+      "secs": 54.7
     }
   ]
 }
