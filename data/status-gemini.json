@@ -1,17 +1,17 @@
 {
   "provider": "gemini",
-  "checked_at": "2026-10-25T04:49:19+0000",
+  "checked_at": "2026-10-25T04:51:31+0000",
   "method": "one tiny chat request per model, top 2 of roster",
   "results": [
     {
       "model": "gemini-3.8-flash",
       "status": "ok",
-      "secs": 35.8
+      "secs": 65.8
     },
     {
       "model": "gemini-3.7-flash",
       "status": "error: The read operation timed out",
-      "secs": 60.1
+      "secs": 120.1
     }
   ]
 }
