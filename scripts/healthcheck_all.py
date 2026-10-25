@@ -82,6 +82,23 @@ def main():
             # only chat-capable ones answer a chat probe.
             chat = [m for m in all_models if "instruct" in m or "gpt-oss" in m]
             models = (chat or all_models)[:PER]
+        elif p["id"] == "gemini":
+            # The live catalog leads with legacy models that are closed
+            # to new users (gemini-2.5-flash returns 404 on generateContent
+            # for new accounts) and mixes in TTS/image/live variants.
+            # Probe the newest plain chat models instead.
+            import re
+
+            def ver(m):
+                mm = re.search(r"gemini-(\d+)(?:\.(\d+))?", m)
+                return (int(mm.group(1)), int(mm.group(2) or 0)) if mm else (0, 0)
+
+            skip = ("tts", "image", "live", "preview", "customtools",
+                    "nano-banana")
+            chat = [m for m in all_models if m.startswith("gemini")
+                    and not any(s in m for s in skip)]
+            chat.sort(key=ver, reverse=True)
+            models = (chat or all_models)[:PER]
         else:
             models = all_models[:PER]
         results = []
