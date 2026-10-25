@@ -24,7 +24,9 @@ def call(url, body, headers):
                                  headers={"Content-Type": "application/json", **headers})
     t = time.time()
     try:
-        with urllib.request.urlopen(req, timeout=60) as r:
+        # 120s: free tiers queue hard - Gemini Flash probes measured
+        # 35-55s for a 16-token reply, so 60s produced false timeouts.
+        with urllib.request.urlopen(req, timeout=120) as r:
             json.load(r)
         return "ok", round(time.time() - t, 1)
     except urllib.error.HTTPError as e:
