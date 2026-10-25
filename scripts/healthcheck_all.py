@@ -85,19 +85,20 @@ def main():
         elif p["id"] == "gemini":
             # The live catalog leads with legacy models that are closed
             # to new users (gemini-2.5-flash returns 404 on generateContent
-            # for new accounts) and mixes in TTS/image/live variants.
-            # Probe the newest plain chat models instead.
+            # for new accounts) and mixes in TTS/image/live variants plus
+            # codename previews (gemini-4-argon answers 403). Probe only
+            # mainstream numbered chat models, newest version first.
             import re
 
-            def ver(m):
-                mm = re.search(r"gemini-(\d+)(?:\.(\d+))?", m)
-                return (int(mm.group(1)), int(mm.group(2) or 0)) if mm else (0, 0)
+            pat = re.compile(r"^gemini-(\d+)(?:\.(\d+))?-(flash|pro)(-lite)?$")
 
-            skip = ("tts", "image", "live", "preview", "customtools",
-                    "nano-banana")
-            chat = [m for m in all_models if m.startswith("gemini")
-                    and not any(s in m for s in skip)]
-            chat.sort(key=ver, reverse=True)
+            def keyf(m):
+                mm = pat.match(m)
+                ver = (int(mm.group(1)), int(mm.group(2) or 0))
+                return (ver, 0 if mm.group(4) else 1)
+
+            chat = [m for m in all_models if pat.match(m)]
+            chat.sort(key=keyf, reverse=True)
             models = (chat or all_models)[:PER]
         else:
             models = all_models[:PER]
