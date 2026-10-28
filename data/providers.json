@@ -1,5 +1,5 @@
 {
-  "refreshed_at": "2026-10-27T05:23:50+0000",
+  "refreshed_at": "2026-10-28T06:02:40+0000",
   "providers": [
     {
       "id": "openrouter",
@@ -8,7 +8,7 @@
       "limits": "50 free-model requests/day per account (free tier); models priced $0",
       "signup": "https://openrouter.ai",
       "roster_source": "api",
-      "model_count": 16,
+      "model_count": 15,
       "key_env": "OPENROUTER_API_KEY",
       "key_configured": false
     },

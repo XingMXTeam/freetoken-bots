@@ -1,8 +1,8 @@
 {
-  "refreshed_at": "2026-10-27T05:23:47+0000",
+  "refreshed_at": "2026-10-28T06:02:38+0000",
   "source": "https://openrouter.ai/api/v1/models",
   "catalog_size": 464,
-  "count": 16,
+  "count": 15,
   "fallback": "openrouter/free",
   "models": [
     {
@@ -78,13 +78,6 @@
     {
       "id": "google/gemma-4-31b-it:free",
       "name": "Google: Gemma 4 31B (free)",
-      "context_length": 262144,
-      "reasoning": true,
-      "score": 15
-    },
-    {
-      "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "name": "NVIDIA: Nemotron 3 Super (free)",
       "context_length": 262144,
       "reasoning": true,
       "score": 15

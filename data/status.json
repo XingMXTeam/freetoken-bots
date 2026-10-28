@@ -1,28 +1,28 @@
 {
-  "checked_at": "2026-10-27T05:23:47+0000",
+  "checked_at": "2026-10-28T06:02:38+0000",
   "method": "one chat completion per model, max_tokens=16, top 5 + router",
   "results": [
     {
       "model": "poolside/laguna-s-2.1:free",
-      "status": "rate-limited",
-      "secs": 0.2
+      "status": "ok",
+      "secs": 0.8,
+      "answered_by": "poolside/laguna-s-2.1:free"
     },
     {
       "model": "poolside/laguna-xs-2.1:free",
-      "status": "ok",
-      "secs": 0.3,
-      "answered_by": "poolside/laguna-xs-2.1:free"
+      "status": "rate-limited",
+      "secs": 0.3
     },
     {
       "model": "cohere/north-mini-code:free",
       "status": "ok",
-      "secs": 0.3,
+      "secs": 0.5,
       "answered_by": "cohere/north-mini-code:free"
     },
     {
       "model": "thinkingmachines/inkling-small:free",
       "status": "http-403",
-      "secs": 0.1
+      "secs": 0.0
     },
     {
       "model": "thinkingmachines/inkling:free",
@@ -32,8 +32,8 @@
     {
       "model": "openrouter/free",
       "status": "ok",
-      "secs": 1.0,
-      "answered_by": "cohere/north-mini-code:free"
+      "secs": 0.5,
+      "answered_by": "nvidia/nemotron-3.5-content-safety:free"
     }
   ]
 }

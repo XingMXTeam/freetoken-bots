@@ -1,6 +1,6 @@
 {
   "provider": "gemini",
-  "checked_at": "2026-10-27T05:23:51+0000",
+  "checked_at": "2026-10-28T06:02:42+0000",
   "method": "newest mainstream models first, until 2 answer (max 4 probed, all attempts recorded)",
   "results": [
     {
@@ -10,18 +10,13 @@
     },
     {
       "model": "gemini-3.7-flash",
-      "status": "error: The read operation timed out",
-      "secs": 120.1
+      "status": "ok",
+      "secs": 50.6
     },
     {
       "model": "gemini-3.6-flash",
       "status": "ok",
-      "secs": 0.9
-    },
-    {
-      "model": "gemini-3.5-flash",
-      "status": "ok",
-      "secs": 0.8
+      "secs": 1.0
     }
   ]
 }
