@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-28T06:02:38+0000",
+  "checked_at": "2026-10-29T06:14:38+0000",
   "method": "one chat completion per model, max_tokens=16, top 5 + router",
   "results": [
     {
@@ -10,13 +10,14 @@
     },
     {
       "model": "poolside/laguna-xs-2.1:free",
-      "status": "rate-limited",
-      "secs": 0.3
+      "status": "ok",
+      "secs": 0.5,
+      "answered_by": "poolside/laguna-xs-2.1:free"
     },
     {
       "model": "cohere/north-mini-code:free",
       "status": "ok",
-      "secs": 0.5,
+      "secs": 0.3,
       "answered_by": "cohere/north-mini-code:free"
     },
     {
@@ -32,8 +33,8 @@
     {
       "model": "openrouter/free",
       "status": "ok",
-      "secs": 0.5,
-      "answered_by": "nvidia/nemotron-3.5-content-safety:free"
+      "secs": 1.3,
+      "answered_by": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
   "provider": "cloudflare",
-  "checked_at": "2026-10-28T06:02:42+0000",
+  "checked_at": "2026-10-29T06:14:43+0000",
   "method": "one tiny chat request per model, top 2 of roster",
   "results": [
     {
       "model": "@cf/openai/gpt-oss-120b",
       "status": "ok",
-      "secs": 0.8
+      "secs": 0.5
     },
     {
       "model": "@cf/meta/llama-3.2-3b-instruct",
