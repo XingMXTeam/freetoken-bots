@@ -1,21 +1,23 @@
 {
-  "checked_at": "2026-10-30T06:14:32+0000",
+  "checked_at": "2026-10-31T06:07:28+0000",
   "method": "one chat completion per model, max_tokens=16, top 5 + router",
   "results": [
     {
       "model": "poolside/laguna-s-2.1:free",
-      "status": "rate-limited",
-      "secs": 0.3
+      "status": "ok",
+      "secs": 3.3,
+      "answered_by": "poolside/laguna-s-2.1:free"
     },
     {
       "model": "poolside/laguna-xs-2.1:free",
-      "status": "rate-limited",
-      "secs": 0.2
+      "status": "ok",
+      "secs": 0.3,
+      "answered_by": "poolside/laguna-xs-2.1:free"
     },
     {
       "model": "cohere/north-mini-code:free",
       "status": "ok",
-      "secs": 0.2,
+      "secs": 0.3,
       "answered_by": "cohere/north-mini-code:free"
     },
     {
@@ -31,8 +33,8 @@
     {
       "model": "openrouter/free",
       "status": "ok",
-      "secs": 0.7,
-      "answered_by": "poolside/laguna-s-2.1:free"
+      "secs": 0.4,
+      "answered_by": "cohere/north-mini-code:free"
     }
   ]
 }

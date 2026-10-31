@@ -1,17 +1,27 @@
 {
   "provider": "gemini",
-  "checked_at": "2026-10-30T06:14:35+0000",
+  "checked_at": "2026-10-31T06:07:34+0000",
   "method": "newest mainstream models first, until 2 answer (max 4 probed, all attempts recorded)",
   "results": [
     {
       "model": "gemini-3.8-flash",
-      "status": "ok",
-      "secs": 117.2
+      "status": "error: The read operation timed out",
+      "secs": 120.1
     },
     {
       "model": "gemini-3.7-flash",
+      "status": "http-503",
+      "secs": 7.6
+    },
+    {
+      "model": "gemini-3.6-flash",
       "status": "ok",
-      "secs": 61.3
+      "secs": 4.5
+    },
+    {
+      "model": "gemini-3.5-flash",
+      "status": "ok",
+      "secs": 2.6
     }
   ]
 }
