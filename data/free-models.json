@@ -1,24 +1,10 @@
 {
-  "refreshed_at": "2026-10-31T06:07:27+0000",
+  "refreshed_at": "2026-11-01T06:37:28+0000",
   "source": "https://openrouter.ai/api/v1/models",
-  "catalog_size": 456,
-  "count": 15,
+  "catalog_size": 452,
+  "count": 13,
   "fallback": "openrouter/free",
   "models": [
-    {
-      "id": "poolside/laguna-s-2.1:free",
-      "name": "Poolside: Laguna S 2.1 (free)",
-      "context_length": 262144,
-      "reasoning": true,
-      "score": 45
-    },
-    {
-      "id": "poolside/laguna-xs-2.1:free",
-      "name": "Poolside: Laguna XS 2.1 (free)",
-      "context_length": 262144,
-      "reasoning": true,
-      "score": 45
-    },
     {
       "id": "cohere/north-mini-code:free",
       "name": "Cohere: North Mini Code (free)",
