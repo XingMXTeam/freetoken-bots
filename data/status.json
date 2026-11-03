@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-02T06:37:38+0000",
+  "checked_at": "2026-11-03T07:06:44+0000",
   "method": "one chat completion per model, max_tokens=16, top 5 + router",
   "results": [
     {
@@ -20,20 +20,21 @@
     },
     {
       "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
-      "status": "http-503",
-      "secs": 0.3
+      "status": "ok",
+      "secs": 0.8,
+      "answered_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
     },
     {
       "model": "nvidia/nemotron-3.5-lightning:free",
       "status": "ok",
-      "secs": 0.3,
+      "secs": 21.8,
       "answered_by": "nvidia/nemotron-3.5-lightning:free"
     },
     {
       "model": "openrouter/free",
       "status": "ok",
-      "secs": 4.6,
-      "answered_by": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+      "secs": 0.2,
+      "answered_by": "liquid/lfm-2.5-2.6b:free"
     }
   ]
 }
