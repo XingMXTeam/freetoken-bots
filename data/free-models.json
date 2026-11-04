@@ -1,8 +1,8 @@
 {
-  "refreshed_at": "2026-11-03T07:06:44+0000",
+  "refreshed_at": "2026-11-04T06:51:53+0000",
   "source": "https://openrouter.ai/api/v1/models",
-  "catalog_size": 451,
-  "count": 13,
+  "catalog_size": 455,
+  "count": 14,
   "fallback": "openrouter/free",
   "models": [
     {
@@ -11,6 +11,13 @@
       "context_length": 256000,
       "reasoning": true,
       "score": 45
+    },
+    {
+      "id": "stealth/crouton-alpha",
+      "name": "Crouton Alpha",
+      "context_length": 1048576,
+      "reasoning": true,
+      "score": 20
     },
     {
       "id": "thinkingmachines/inkling-small:free",
