@@ -1,8 +1,8 @@
 {
-  "refreshed_at": "2026-11-04T06:51:53+0000",
+  "refreshed_at": "2026-11-05T07:10:59+0000",
   "source": "https://openrouter.ai/api/v1/models",
   "catalog_size": 455,
-  "count": 14,
+  "count": 12,
   "fallback": "openrouter/free",
   "models": [
     {
@@ -15,20 +15,6 @@
     {
       "id": "stealth/crouton-alpha",
       "name": "Crouton Alpha",
-      "context_length": 1048576,
-      "reasoning": true,
-      "score": 20
-    },
-    {
-      "id": "thinkingmachines/inkling-small:free",
-      "name": "Thinking Machines: Inkling Small (free)",
-      "context_length": 1048576,
-      "reasoning": true,
-      "score": 20
-    },
-    {
-      "id": "thinkingmachines/inkling:free",
-      "name": "Thinking Machines: Inkling (free)",
       "context_length": 1048576,
       "reasoning": true,
       "score": 20
