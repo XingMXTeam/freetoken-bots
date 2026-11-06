@@ -1,23 +1,23 @@
 {
-  "checked_at": "2026-11-05T07:10:59+0000",
+  "checked_at": "2026-11-06T07:10:35+0000",
   "method": "one chat completion per model, max_tokens=16, top 5 + router",
   "results": [
     {
       "model": "cohere/north-mini-code:free",
       "status": "ok",
-      "secs": 0.5,
+      "secs": 0.4,
       "answered_by": "cohere/north-mini-code:free"
     },
     {
       "model": "stealth/crouton-alpha",
       "status": "ok",
-      "secs": 1.1,
+      "secs": 1.2,
       "answered_by": "stealth/crouton-alpha"
     },
     {
       "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
       "status": "ok",
-      "secs": 2.1,
+      "secs": 1.8,
       "answered_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
     },
     {
@@ -35,8 +35,8 @@
     {
       "model": "openrouter/free",
       "status": "ok",
-      "secs": 1.2,
-      "answered_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
+      "secs": 0.4,
+      "answered_by": "cohere/north-mini-code:free"
     }
   ]
 }

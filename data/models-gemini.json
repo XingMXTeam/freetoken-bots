@@ -1,8 +1,8 @@
 {
   "provider": "gemini",
-  "refreshed_at": "2026-11-05T07:11:05+0000",
+  "refreshed_at": "2026-11-06T07:10:40+0000",
   "source": "api",
-  "count": 46,
+  "count": 47,
   "models": [
     {
       "id": "gemini-2.5-flash"
@@ -84,6 +84,9 @@
     },
     {
       "id": "gemini-omni-1.1-flash"
+    },
+    {
+      "id": "gemini-omni-1.2-flash"
     },
     {
       "id": "gemini-3.5-transcribe"
