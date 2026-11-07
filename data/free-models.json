@@ -1,8 +1,8 @@
 {
-  "refreshed_at": "2026-11-06T07:10:35+0000",
+  "refreshed_at": "2026-11-07T06:24:01+0000",
   "source": "https://openrouter.ai/api/v1/models",
-  "catalog_size": 454,
-  "count": 12,
+  "catalog_size": 460,
+  "count": 13,
   "fallback": "openrouter/free",
   "models": [
     {
@@ -57,6 +57,13 @@
     {
       "id": "google/gemma-4-31b-it:free",
       "name": "Google: Gemma 4 31B (free)",
+      "context_length": 262144,
+      "reasoning": true,
+      "score": 15
+    },
+    {
+      "id": "liquid/lfm-3-1.7b:free",
+      "name": "LiquidAI: LFM3-1.7B (free)",
       "context_length": 262144,
       "reasoning": true,
       "score": 15
