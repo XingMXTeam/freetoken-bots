@@ -1,29 +1,28 @@
 {
-  "checked_at": "2026-11-09T07:00:21+0000",
+  "checked_at": "2026-11-10T07:37:45+0000",
   "method": "one chat completion per model, max_tokens=16, top 5 + router",
   "results": [
     {
       "model": "cohere/north-mini-code:free",
       "status": "ok",
-      "secs": 1.9,
+      "secs": 0.3,
       "answered_by": "cohere/north-mini-code:free"
     },
     {
-      "model": "stealth/crouton-alpha",
-      "status": "ok",
-      "secs": 0.8,
-      "answered_by": "stealth/crouton-alpha"
+      "model": "thinkingmachines/inkling-2-small:free",
+      "status": "http-403",
+      "secs": 0.0
     },
     {
       "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
       "status": "ok",
-      "secs": 0.8,
+      "secs": 0.9,
       "answered_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
     },
     {
       "model": "nvidia/nemotron-3.5-lightning:free",
       "status": "ok",
-      "secs": 0.3,
+      "secs": 0.2,
       "answered_by": "nvidia/nemotron-3.5-lightning:free"
     },
     {
@@ -35,8 +34,8 @@
     {
       "model": "openrouter/free",
       "status": "ok",
-      "secs": 0.4,
-      "answered_by": "nvidia/nemotron-3.5-lightning:free"
+      "secs": 0.2,
+      "answered_by": "liquid/lfm-2.5-2.6b:free"
     }
   ]
 }

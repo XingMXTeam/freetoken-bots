@@ -1,7 +1,7 @@
 {
-  "refreshed_at": "2026-11-09T07:00:21+0000",
+  "refreshed_at": "2026-11-10T07:37:45+0000",
   "source": "https://openrouter.ai/api/v1/models",
-  "catalog_size": 461,
+  "catalog_size": 465,
   "count": 13,
   "fallback": "openrouter/free",
   "models": [
@@ -13,8 +13,8 @@
       "score": 45
     },
     {
-      "id": "stealth/crouton-alpha",
-      "name": "Crouton Alpha",
+      "id": "thinkingmachines/inkling-2-small:free",
+      "name": "Thinking Machines: Inkling 2 Small (free)",
       "context_length": 1048576,
       "reasoning": true,
       "score": 20
