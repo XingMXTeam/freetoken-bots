@@ -1,8 +1,8 @@
 {
-  "refreshed_at": "2026-11-10T07:37:45+0000",
+  "refreshed_at": "2026-11-11T06:56:16+0000",
   "source": "https://openrouter.ai/api/v1/models",
-  "catalog_size": 465,
-  "count": 13,
+  "catalog_size": 469,
+  "count": 12,
   "fallback": "openrouter/free",
   "models": [
     {
@@ -71,13 +71,6 @@
     {
       "id": "recursive/flint-v1.0:free",
       "name": "Recursive: Flint (free)",
-      "context_length": 262144,
-      "reasoning": true,
-      "score": 15
-    },
-    {
-      "id": "xingchen-agi/xing4.0-29b-a4b:free",
-      "name": "XingChen: Xing4.0 29B A4B (free)",
       "context_length": 262144,
       "reasoning": true,
       "score": 15
