@@ -1,8 +1,8 @@
 {
-  "refreshed_at": "2026-11-11T06:56:16+0000",
+  "refreshed_at": "2026-11-12T07:32:08+0000",
   "source": "https://openrouter.ai/api/v1/models",
-  "catalog_size": 469,
-  "count": 12,
+  "catalog_size": 468,
+  "count": 13,
   "fallback": "openrouter/free",
   "models": [
     {
@@ -16,6 +16,13 @@
       "id": "thinkingmachines/inkling-2-small:free",
       "name": "Thinking Machines: Inkling 2 Small (free)",
       "context_length": 1048576,
+      "reasoning": true,
+      "score": 20
+    },
+    {
+      "id": "baidu/ernie-5.5-flash-preview:free",
+      "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
+      "context_length": 1024000,
       "reasoning": true,
       "score": 20
     },
