@@ -1,41 +1,41 @@
 {
-  "checked_at": "2026-11-12T07:32:08+0000",
+  "checked_at": "2026-11-13T07:03:50+0000",
   "method": "one chat completion per model, max_tokens=16, top 5 + router",
   "results": [
     {
       "model": "cohere/north-mini-code:free",
       "status": "ok",
-      "secs": 1.0,
+      "secs": 0.4,
       "answered_by": "cohere/north-mini-code:free"
+    },
+    {
+      "model": "particle-ai/particle-1:free",
+      "status": "ok",
+      "secs": 0.6,
+      "answered_by": "particle-ai/particle-1:free"
     },
     {
       "model": "thinkingmachines/inkling-2-small:free",
       "status": "http-403",
-      "secs": 0.0
+      "secs": 0.1
     },
     {
       "model": "baidu/ernie-5.5-flash-preview:free",
       "status": "ok",
-      "secs": 0.7,
+      "secs": 1.5,
       "answered_by": "baidu/ernie-5.5-flash-preview:free"
     },
     {
       "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
       "status": "ok",
-      "secs": 0.6,
+      "secs": 1.3,
       "answered_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
-    },
-    {
-      "model": "nvidia/nemotron-3.5-lightning:free",
-      "status": "ok",
-      "secs": 0.3,
-      "answered_by": "nvidia/nemotron-3.5-lightning:free"
     },
     {
       "model": "openrouter/free",
       "status": "ok",
       "secs": 0.4,
-      "answered_by": "nvidia/nemotron-3.5-lightning:free"
+      "answered_by": "liquid/lfm-3-1.7b:free"
     }
   ]
 }

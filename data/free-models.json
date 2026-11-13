@@ -1,8 +1,8 @@
 {
-  "refreshed_at": "2026-11-12T07:32:08+0000",
+  "refreshed_at": "2026-11-13T07:03:50+0000",
   "source": "https://openrouter.ai/api/v1/models",
-  "catalog_size": 468,
-  "count": 13,
+  "catalog_size": 475,
+  "count": 15,
   "fallback": "openrouter/free",
   "models": [
     {
@@ -11,6 +11,13 @@
       "context_length": 256000,
       "reasoning": true,
       "score": 45
+    },
+    {
+      "id": "particle-ai/particle-1:free",
+      "name": "Particle AI: Particle-1 (free)",
+      "context_length": 1048576,
+      "reasoning": true,
+      "score": 20
     },
     {
       "id": "thinkingmachines/inkling-2-small:free",
@@ -53,6 +60,13 @@
       "context_length": 512000,
       "reasoning": true,
       "score": 17
+    },
+    {
+      "id": "apodex/apodex-1.1-mini:free",
+      "name": "Apodex: Apodex 1.1 Mini (free)",
+      "context_length": 262144,
+      "reasoning": true,
+      "score": 15
     },
     {
       "id": "google/gemma-4-26b-a4b-it:free",

@@ -1,11 +1,14 @@
 {
   "provider": "cloudflare",
-  "refreshed_at": "2026-11-12T07:32:11+0000",
+  "refreshed_at": "2026-11-13T07:03:55+0000",
   "source": "api",
-  "count": 73,
+  "count": 75,
   "models": [
     {
       "id": "@cf/pipecat-ai/smart-turn-v2"
+    },
+    {
+      "id": "@cf/thinkingmachines/inkling-2-small"
     },
     {
       "id": "@cf/openai/gpt-oss-120b"
@@ -213,6 +216,9 @@
     },
     {
       "id": "@cf/cloudflare/clef-flash"
+    },
+    {
+      "id": "@cf/google/embeddinggemma-2"
     },
     {
       "id": "@cf/qwen/qwq-32b"

@@ -1,8 +1,8 @@
 {
   "provider": "gemini",
-  "refreshed_at": "2026-11-12T07:32:11+0000",
+  "refreshed_at": "2026-11-13T07:03:55+0000",
   "source": "api",
-  "count": 48,
+  "count": 49,
   "models": [
     {
       "id": "gemini-2.5-flash"
@@ -105,6 +105,9 @@
     },
     {
       "id": "gemini-4-carbon"
+    },
+    {
+      "id": "gemini-4-hydrogen"
     },
     {
       "id": "lyria-3-clip-preview"
