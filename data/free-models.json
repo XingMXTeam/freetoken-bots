@@ -1,8 +1,8 @@
 {
-  "refreshed_at": "2026-11-13T07:03:50+0000",
+  "refreshed_at": "2026-11-14T06:52:56+0000",
   "source": "https://openrouter.ai/api/v1/models",
-  "catalog_size": 475,
-  "count": 15,
+  "catalog_size": 471,
+  "count": 14,
   "fallback": "openrouter/free",
   "models": [
     {
@@ -11,6 +11,13 @@
       "context_length": 256000,
       "reasoning": true,
       "score": 45
+    },
+    {
+      "id": "inclusionai/ling-3.2-flash:free",
+      "name": "inclusionAI: Ling 3.2 Flash (free)",
+      "context_length": 1048576,
+      "reasoning": true,
+      "score": 20
     },
     {
       "id": "particle-ai/particle-1:free",
@@ -62,13 +69,6 @@
       "score": 17
     },
     {
-      "id": "apodex/apodex-1.1-mini:free",
-      "name": "Apodex: Apodex 1.1 Mini (free)",
-      "context_length": 262144,
-      "reasoning": true,
-      "score": 15
-    },
-    {
       "id": "google/gemma-4-26b-a4b-it:free",
       "name": "Google: Gemma 4 26B A4B  (free)",
       "context_length": 262144,
@@ -102,13 +102,6 @@
       "context_length": 256000,
       "reasoning": true,
       "score": 15
-    },
-    {
-      "id": "liquid/lfm-2.5-2.6b:free",
-      "name": "LiquidAI: LFM2.5-2.6B (free)",
-      "context_length": 65536,
-      "reasoning": true,
-      "score": 5
     }
   ]
 }
