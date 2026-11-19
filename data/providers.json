@@ -1,5 +1,5 @@
 {
-  "refreshed_at": "2026-11-18T07:50:13+0000",
+  "refreshed_at": "2026-11-19T07:46:40+0000",
   "providers": [
     {
       "id": "openrouter",
@@ -19,7 +19,7 @@
       "limits": "Free tier, no card required. Community-measured: Flash models roughly 10 RPM and up to ~1,500 requests/day depending on model. Free-tier prompts may be used by Google to improve products; a project with billing enabled loses the free tier.",
       "signup": "https://aistudio.google.com/apikey",
       "roster_source": "api",
-      "model_count": 49,
+      "model_count": 50,
       "key_env": "GEMINI_API_KEY",
       "key_configured": true,
       "note": null
@@ -55,7 +55,7 @@
       "limits": "10,000 Neurons/day free - roughly 4M input tokens/day on small models; the largest renewable free token pool, but you bring your own gateway/adapter.",
       "signup": "https://dash.cloudflare.com/?to=/:account/ai",
       "roster_source": "api",
-      "model_count": 75,
+      "model_count": 76,
       "key_env": "CLOUDFLARE_API_TOKEN",
       "key_configured": true,
       "note": null

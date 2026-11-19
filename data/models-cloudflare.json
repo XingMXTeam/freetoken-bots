@@ -1,8 +1,8 @@
 {
   "provider": "cloudflare",
-  "refreshed_at": "2026-11-18T07:50:13+0000",
+  "refreshed_at": "2026-11-19T07:46:40+0000",
   "source": "api",
-  "count": 75,
+  "count": 76,
   "models": [
     {
       "id": "@cf/pipecat-ai/smart-turn-v2"
@@ -27,6 +27,9 @@
     },
     {
       "id": "@cf/meta/llama-3.2-3b-instruct"
+    },
+    {
+      "id": "@cf/cloudflare/clairic-flash"
     },
     {
       "id": "@cf/meta/llama-guard-3-8b"

@@ -1,6 +1,6 @@
 {
   "provider": "cloudflare",
-  "checked_at": "2026-11-18T07:50:20+0000",
+  "checked_at": "2026-11-19T07:46:42+0000",
   "method": "one tiny chat request per model, top 2 of roster",
   "results": [
     {
@@ -11,7 +11,7 @@
     {
       "model": "@cf/meta/llama-3.2-3b-instruct",
       "status": "ok",
-      "secs": 0.4
+      "secs": 0.3
     }
   ]
 }
