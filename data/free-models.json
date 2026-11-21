@@ -1,8 +1,8 @@
 {
-  "refreshed_at": "2026-11-20T07:38:48+0000",
+  "refreshed_at": "2026-11-21T07:34:44+0000",
   "source": "https://openrouter.ai/api/v1/models",
-  "catalog_size": 477,
-  "count": 12,
+  "catalog_size": 476,
+  "count": 11,
   "fallback": "openrouter/free",
   "models": [
     {
@@ -46,13 +46,6 @@
       "context_length": 1000000,
       "reasoning": true,
       "score": 20
-    },
-    {
-      "id": "dots-studio/dots-3-note-preview:free",
-      "name": "Dots Studio: Dots3-Note Preview (free)",
-      "context_length": 512000,
-      "reasoning": true,
-      "score": 17
     },
     {
       "id": "google/gemma-4-26b-a4b-it:free",

@@ -1,8 +1,8 @@
 {
   "provider": "gemini",
-  "refreshed_at": "2026-11-20T07:38:50+0000",
+  "refreshed_at": "2026-11-21T07:34:51+0000",
   "source": "api",
-  "count": 50,
+  "count": 49,
   "models": [
     {
       "id": "gemini-2.5-flash"
@@ -150,9 +150,6 @@
     },
     {
       "id": "deep-research-preview-04-2026"
-    },
-    {
-      "id": "deep-research-pro-preview-12-2025"
     }
   ]
 }
