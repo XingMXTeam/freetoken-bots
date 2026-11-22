@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-21T07:34:44+0000",
+  "checked_at": "2026-11-22T07:16:45+0000",
   "method": "one chat completion per model, max_tokens=16, top 5 + router",
   "results": [
     {
@@ -10,30 +10,30 @@
     {
       "model": "particle-ai/particle-1:free",
       "status": "rate-limited",
-      "secs": 0.3
+      "secs": 0.4
     },
     {
       "model": "baidu/ernie-5.5-flash-preview:free",
       "status": "ok",
-      "secs": 3.3,
+      "secs": 1.2,
       "answered_by": "baidu/ernie-5.5-flash-preview:free"
     },
     {
       "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
       "status": "ok",
-      "secs": 1.8,
+      "secs": 1.5,
       "answered_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
     },
     {
       "model": "nvidia/nemotron-3.5-lightning:free",
       "status": "ok",
-      "secs": 0.3,
+      "secs": 0.2,
       "answered_by": "nvidia/nemotron-3.5-lightning:free"
     },
     {
       "model": "openrouter/free",
       "status": "ok",
-      "secs": 0.7,
+      "secs": 0.4,
       "answered_by": "recursive/flint-v1.0:free"
     }
   ]
