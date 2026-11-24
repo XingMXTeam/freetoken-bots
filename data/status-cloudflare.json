@@ -1,17 +1,17 @@
 {
   "provider": "cloudflare",
-  "checked_at": "2026-11-23T08:00:03+0000",
+  "checked_at": "2026-11-24T10:15:43+0000",
   "method": "one tiny chat request per model, top 2 of roster",
   "results": [
     {
       "model": "@cf/openai/gpt-oss-120b",
       "status": "ok",
-      "secs": 0.5
+      "secs": 0.6
     },
     {
       "model": "@cf/mistral/mistral-7b-instruct-v0.2-lora",
       "status": "ok",
-      "secs": 0.5
+      "secs": 0.4
     }
   ]
 }

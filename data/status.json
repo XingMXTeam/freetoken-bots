@@ -1,26 +1,28 @@
 {
-  "checked_at": "2026-11-23T07:59:55+0000",
+  "checked_at": "2026-11-24T10:15:36+0000",
   "method": "one chat completion per model, max_tokens=16, top 5 + router",
   "results": [
     {
       "model": "inclusionai/ling-3.2-flash:free",
       "status": "rate-limited",
-      "secs": 1.0
+      "secs": 0.7
     },
     {
       "model": "particle-ai/particle-1:free",
-      "status": "rate-limited",
-      "secs": 0.1
+      "status": "ok",
+      "secs": 0.4,
+      "answered_by": "particle-ai/particle-1:free"
     },
     {
       "model": "baidu/ernie-5.5-flash-preview:free",
-      "status": "rate-limited",
-      "secs": 0.4
+      "status": "ok",
+      "secs": 1.6,
+      "answered_by": "baidu/ernie-5.5-flash-preview:free"
     },
     {
       "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
       "status": "ok",
-      "secs": 4.5,
+      "secs": 1.9,
       "answered_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
     },
     {
@@ -33,7 +35,7 @@
       "model": "openrouter/free",
       "status": "ok",
       "secs": 0.4,
-      "answered_by": "nvidia/nemotron-3.5-super-vl:free"
+      "answered_by": "liquid/lfm-3-1.7b:free"
     }
   ]
 }
