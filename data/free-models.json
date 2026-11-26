@@ -1,7 +1,7 @@
 {
-  "refreshed_at": "2026-11-25T08:58:25+0000",
+  "refreshed_at": "2026-11-26T08:45:25+0000",
   "source": "https://openrouter.ai/api/v1/models",
-  "catalog_size": 472,
+  "catalog_size": 474,
   "count": 11,
   "fallback": "openrouter/free",
   "models": [
