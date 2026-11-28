@@ -1,28 +1,23 @@
 {
-  "checked_at": "2026-11-27T08:55:36+0000",
+  "checked_at": "2026-11-28T08:17:19+0000",
   "method": "one chat completion per model, max_tokens=16, top 5 + router",
   "results": [
     {
-      "model": "inclusionai/ling-3.2-flash:free",
-      "status": "rate-limited",
-      "secs": 0.3
-    },
-    {
       "model": "particle-ai/particle-1:free",
       "status": "ok",
-      "secs": 0.3,
+      "secs": 0.4,
       "answered_by": "particle-ai/particle-1:free"
     },
     {
       "model": "baidu/ernie-5.5-flash-preview:free",
       "status": "ok",
-      "secs": 2.0,
+      "secs": 0.9,
       "answered_by": "baidu/ernie-5.5-flash-preview:free"
     },
     {
       "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
       "status": "ok",
-      "secs": 0.9,
+      "secs": 0.5,
       "answered_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
     },
     {
@@ -32,10 +27,16 @@
       "answered_by": "nvidia/nemotron-3.5-lightning:free"
     },
     {
+      "model": "nvidia/nemotron-3.5-super-vl:free",
+      "status": "ok",
+      "secs": 0.3,
+      "answered_by": "nvidia/nemotron-3.5-super-vl:free"
+    },
+    {
       "model": "openrouter/free",
       "status": "ok",
-      "secs": 0.9,
-      "answered_by": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+      "secs": 0.4,
+      "answered_by": "nvidia/nemotron-3.5-lightning:free"
     }
   ]
 }

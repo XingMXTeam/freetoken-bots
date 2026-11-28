@@ -1,6 +1,6 @@
 {
   "provider": "cloudflare",
-  "checked_at": "2026-11-27T08:55:42+0000",
+  "checked_at": "2026-11-28T08:17:23+0000",
   "method": "one tiny chat request per model, top 2 of roster",
   "results": [
     {

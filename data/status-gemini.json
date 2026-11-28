@@ -1,6 +1,6 @@
 {
   "provider": "gemini",
-  "checked_at": "2026-11-27T08:55:42+0000",
+  "checked_at": "2026-11-28T08:17:23+0000",
   "method": "newest mainstream models first, until 2 answer (max 4 probed, all attempts recorded)",
   "results": [
     {
@@ -11,17 +11,17 @@
     {
       "model": "gemini-3.7-flash",
       "status": "http-503",
-      "secs": 2.2
+      "secs": 4.9
     },
     {
       "model": "gemini-3.6-flash",
       "status": "ok",
-      "secs": 1.0
+      "secs": 0.5
     },
     {
       "model": "gemini-3.5-flash",
       "status": "ok",
-      "secs": 1.0
+      "secs": 0.5
     }
   ]
 }
